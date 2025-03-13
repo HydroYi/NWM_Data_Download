@@ -1,0 +1,42 @@
+NWM Data Download and Processing (Extended Analysis)
+
+#Step 1. Download NWM Extended analysis/assimilation data (nwm_assim_archive)
+
+# Step 2. Extract the streamflow for each day(nwm_assim_sf.py） 
+
+# Step 3. Outputting CSV files for daily and monthly streamflows (nwm_ext_assim_monthly_inflow.py）
+
+# Step 4. Upload data to Google Drive or other destinations
+https://drive.google.com/drive/u/2/folders/1vahZsq0vrNGgHToRYoF1KcZU2HlLoT8P
+
+
+In the Great Lakes HPC
+Option 1: Load Google Cloud SDK Module (Preferred)
+Check available modules:
+module spider google-cloud-sdk
+If available, load it with:
+
+module load google-cloud-sdk
+Verify installation:
+
+gsutil version
+
+Option 2: Install gsutil in a Python Virtual Environment (If Not Available)
+If the module isn’t available, install gsutil manually in a Python virtual environment:
+
+Load Python module (if needed):
+
+module load python
+Create a virtual environment:
+
+python3 -m venv ~/gsutil_env
+source ~/gsutil_env/bin/activate
+
+Install gsutil via pip:
+pip install gsutil
+
+Verify installation:
+gsutil version
+
+(Optional) Deactivate the virtual environment when done:
+deactivate
