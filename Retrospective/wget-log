@@ -1,0 +1,11 @@
+--2024-12-03 16:31:40--  https://noaa-nwm-retrospective-3-0-pds.s3.amazonaws.com/CONUS/netcdf/CHRTOUT/1992/199206090600.CHRTOUT_DOMAIN1
+Resolving noaa-nwm-retrospective-3-0-pds.s3.amazonaws.com (noaa-nwm-retrospective-3-0-pds.s3.amazonaws.com)... 3.5.8.160, 3.5.25.141, 52.216.213.177, ...
+Connecting to noaa-nwm-retrospective-3-0-pds.s3.amazonaws.com (noaa-nwm-retrospective-3-0-pds.s3.amazonaws.com)|3.5.8.160|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 46695754 (45M) [binary/octet-stream]
+Saving to: ‘199206090600.CHRTOUT_DOMAIN1’
+
+600.CHRTOUT_DOMAIN1  66%[============>       ]  29.58M  7.46MB/s    eta 3s     00.CHRTOUT_DOMAIN1   69%[============>       ]  30.75M  7.71MB/s    eta 2s     0.CHRTOUT_DOMAIN1    71%[=============>      ]  31.95M  7.67MB/s    eta 2s     .CHRTOUT_DOMAIN1     74%[=============>      ]  33.19M  7.49MB/s    eta 2s     CHRTOUT_DOMAIN1      77%[==============>     ]  34.45M  7.31MB/s    eta 2s     HRTOUT_DOMAIN1       80%[===============>    ]  35.77M  7.13MB/s    eta 2s     RTOUT_DOMAIN1        83%[===============>    ]  37.08M  6.80MB/s    eta 1s     TOUT_DOMAIN1         86%[================>   ]  38.41M  6.60MB/s    eta 1s     OUT_DOMAIN1          89%[================>   ]  39.75M  6.55MB/s    eta 1s     UT_DOMAIN1           92%[=================>  ]  41.08M  6.46MB/s    eta 1s     T_DOMAIN1            95%[==================> ]  42.42M  6.47MB/s    eta 1s     _DOMAIN1             98%[==================> ]  43.77M  6.38MB/s    eta 0s     199206090600.CHRTOU 100%[===================>]  44.53M  6.46MB/s    in 6.3s    
+
+2024-12-03 16:31:47 (7.03 MB/s) - ‘199206090600.CHRTOUT_DOMAIN1’ saved [46695754/46695754]
+
