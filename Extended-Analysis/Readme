@@ -25,7 +25,6 @@ Option 2: Install gsutil in a Python Virtual Environment (If Not Available)
 If the module isn’t available, install gsutil manually in a Python virtual environment:
 
 Load Python module (if needed):
-
 module load python
 Create a virtual environment:
 
@@ -34,9 +33,11 @@ source ~/gsutil_env/bin/activate
 
 Install gsutil via pip:
 pip install gsutil
-
-Verify installation:
 gsutil version
+deactivate (optional)
 
-(Optional) Deactivate the virtual environment when done:
-deactivate
+module load python  # Load Python module
+python -m venv nc_env  # Create a virtual environment
+source nc_env/bin/activate  # Activate it
+pip install numpy pandas netCDF4  # Install required packages
+deactivate  # Exit the environment
