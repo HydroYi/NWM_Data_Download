@@ -5,6 +5,7 @@
 '''
 feature id in NWM streamflow output correspond to NHDPlus Comid
 
+Be careful, this script may remove some ID starts with 0, for example, USGS gauges are sometimes starting with 0, need to be improved
 '''
 
 
@@ -43,7 +44,10 @@ feature_id = test_nc.variables['feature_id'][:]
 # Create a dictionary to map each value in the array to its index
 value_to_index = {value: index for index, value in enumerate(feature_id)}
 # Use the map function to apply this mapping to the 'A' column to create the 'Index_A' column
+
 stn_info['Index_FID'] = stn_info['COMID'].map(value_to_index).fillna(-1).astype(int)
+
+
 count_minus_one = (stn_info['Index_FID'] == -1).sum()  # 578
 
 stn_info.to_csv('C:/Users/hong/Desktop/NWM/code/WQstn_comid_FID.csv', index=False)
