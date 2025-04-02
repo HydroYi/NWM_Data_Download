@@ -11,33 +11,5 @@ https://drive.google.com/drive/u/2/folders/1vahZsq0vrNGgHToRYoF1KcZU2HlLoT8P
 
 
 In the Great Lakes HPC
-Option 1: Load Google Cloud SDK Module (Preferred)
-Check available modules:
-module spider google-cloud-sdk
-If available, load it with:
-
-module load google-cloud-sdk
-Verify installation:
-
-gsutil version
-
-Option 2: Install gsutil in a Python Virtual Environment (If Not Available)
-If the module isn’t available, install gsutil manually in a Python virtual environment:
-
-Load Python module (if needed):
-module load python
-Create a virtual environment:
-
-python3 -m venv ~/gsutil_env
-source ~/gsutil_env/bin/activate
-
-Install gsutil via pip:
-pip install gsutil
-gsutil version
-deactivate (optional)
-
-module load python  # Load Python module
-python -m venv nc_env  # Create a virtual environment
-source nc_env/bin/activate  # Activate it
-pip install numpy pandas netCDF4  # Install required packages
-deactivate  # Exit the environment
+sbatch run_gsutil_job.slurm
+sbatch run_py.slurm
